@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* container */
+  .Container {
+    @apply w-11/12 mx-auto;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Estilo del scroll */
+.scroll-green {
+  scrollbar-width: auto; /* Navegadores como Firefox */
+  scrollbar-color: #2fd48451 #012319; /* Color claro y oscuro */
+}
+
+.scroll-green::-webkit-scrollbar-track {
+  background: #065f46; /* Verde oscuro */
+}
+
+.scroll-green::-webkit-scrollbar-thumb {
+  background-color: #4ade80; /* Verde claro */
+  border-radius: 9999px;
+  border: 2px solid #065f46; /* Borde para contraste */
+}
+
+.scroll-green::-webkit-scrollbar-thumb:hover {
+  background-color: #22c55e; /* Verde más intenso en hover */
+}
