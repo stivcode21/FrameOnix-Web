@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Examples, Header, Install, Presentation, Sidebar, Main } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Header, Install, Sidebar, Main, Footer, Intro, Usage, Contribute } from "./components";
 
 const App = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false); //contrala el boton sidebar mobile
   const [showContainer, setShowContainer] = useState(false); // Controla la visibilidad del contenedor
 
   return (
@@ -16,13 +16,15 @@ const App = () => {
         {showContainer && (
           <div className="md:Container flex h-full mt-[56px] z-10">
             <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-            <div className={`flex-1 px-5 py-2 overflow-y-auto h-full scroll-green
-               ${sidebarOpen ? "block" : "md:block"}`}>
+            <div className={`flex-1 px-5 py-2 overflow-y-auto h-[92%] md:h-[93%] scroll-green`}>
               <Routes>
-                <Route path="/" element={<Presentation />} />
-                <Route path="/examples" element={<Examples />} />
+                <Route path="/" element={<Intro />} />
                 <Route path="/install" element={<Install />} />
+                <Route path="/usage" element={<Usage />} />
+                <Route path="/contribute" element={<Contribute />} />
               </Routes>
+
+              <Footer />
             </div>
           </div>
         )}

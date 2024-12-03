@@ -18,11 +18,14 @@
   html {
     scroll-behavior: smooth;
   }
+  .no-select {
+    user-select: none;
+  }
 }
 
 /* Estilo del scroll */
 .scroll-green {
-  scrollbar-width: auto; /* Navegadores como Firefox */
+  scrollbar-width: auto;
   scrollbar-color: #2fd48451 #012319; /* Color claro y oscuro */
 }
 
