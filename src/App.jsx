@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header, Install, Sidebar, Main, Footer, Intro, Usage, Contribute } from "./components";
+import i18n from "../public/i18n/i18n";
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false); //contrala el boton sidebar mobile
@@ -10,8 +11,8 @@ const App = () => {
     <Router>
       <div className="h-screen flex flex-col scroll-smooth bg-[#050505] overflow-hidden relative">
         <div className="w-full h-full -z-5 absolute bg-[url(https://img.freepik.com/foto-gratis/luces-neon-degradadas-abstractas_23-2149279163.jpg?ga=GA1.1.1028302612.1733019624&semt=ais_hybrid)] bg-no-repeat bg-cover opacity-20"></div>
-        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} showContainer={showContainer} />
 
+        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} showContainer={showContainer} />
         {/* Mostrar el contenedor solo si showContainer es true */}
         {showContainer && (
           <div className="md:Container flex h-full mt-[56px] z-10">

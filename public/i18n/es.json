@@ -1,0 +1,45 @@
+{
+  "languaje": {
+    "en": "Ingles",
+    "es": "Español"
+  },
+  "header": {
+    "contribute": "Contribuir",
+    "blog": "Blog",
+    "v": "v"
+  },
+  "sidebar": {
+    "T-getting": "Empezando",
+    "N-introduction": "Introduccion",
+    "N-install": "Instalacion",
+    "N-usage": "Uso",
+    "N-contribute": "Contribuir",
+
+    "T-components": "Componentes",
+    "ST-blog": "Blog",
+    "N-OnixBlogv1": "OnixBlog v1",
+
+    "ST-portfolio": "Portafolios",
+    "N-onixPortfolioV1": "OnixPortfolio v1",
+
+    "ST-ecommerce": "E-commerce",
+    "N-onixEcommerceV1": "OnixEcommerce v1",
+
+    "ST-landingPage": "Pagina de aterrizaje",
+    "N-onixLandingPageV1": "OnixLandingPage v1",
+
+    "T-customization": "Personalizacion",
+    "N-children": "Uso de Hijos",
+    "N-props": "Uso de Props",
+    "N-styling": "Uso de Estilos",
+
+    "T-useCases": "Casos de uso",
+    "N-blogs": "Blogs y Articulos",
+    "N-portfolios": "Portafolios Creativos",
+    "N-ecommerces": "Sistemas de E-commerce"
+  },
+  "footer": {
+    "contact": "Contáctanos",
+    "rights": "Todos los derechos reservados"
+  }
+}

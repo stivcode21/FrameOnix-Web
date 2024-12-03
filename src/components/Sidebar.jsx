@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { BookOpenIcon } from "@heroicons/react/24/solid";
 import { sections } from "./data";
+import { useTranslation } from 'react-i18next';
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
     const location = useLocation();
     const [activeSection, setActiveSection] = useState(location.pathname);
 
-
+    const { t } = useTranslation();
 
     useEffect(() => {
         setActiveSection(location.pathname);
@@ -19,7 +20,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
     };
 
     return (
-        <aside className={`pt-2 py-2 overflow-y-auto h-[91.98%] md:h-[93%] scroll-green duration-400 transition-all ease-in-out ${sidebarOpen
+        <aside className={`pt-2 py-2 pb-16 md:pb-4 overflow-y-auto h-full md:h-[93%] scroll-green duration-400 transition-all ease-in-out ${sidebarOpen
             ? "fixed w-[65%] top-15 left-0 z-50 px-5 bg-[#0E1711] bg-opacity-[97%] h-full opacity-100 visible translate-x-0"
             : "hidden  opacity-0 invisible md:w-64 md:block md:opacity-100 md:visible"
             }`} >
@@ -30,7 +31,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             <nav>
                 {sections.map((section, index) => (
                     <div key={index} className="mb-6">
-                        <h3 className="font-semibold pb-3 text-md">{section.title}</h3>
+                        <h3 className="font-semibold pb-3 text-md">{t(`sidebar.${section.title}`)}</h3>
+                        {/* recorre solo la section que tenga routes */}
                         {section.routes && (
                             <ul className="flex text-[15px] flex-col gap-y-1 border-l border-l-[#222]">
                                 {section.routes.map((route) => (
@@ -44,16 +46,17 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                             }`}>
                                         <Link to={route.id === "/" ? "/" : `/${route.id}`}
                                             className="block w-full h-full">
-                                            {route.name}
+                                            {t(`sidebar.${route.name}`)}
                                         </Link>
                                     </li>
                                 ))}
                             </ul>
                         )}
+                        {/* recorre solo la section que tenga subsections */}
                         {section.subSections &&
                             section.subSections.map((subSection, index) => (
                                 <div key={index} className="mb-4 border-l border-l-[#333]">
-                                    <h4 className="font-medium text-sm pb-2 pl-2">{subSection.title}</h4>
+                                    <h4 className="font-medium text-sm pb-2 pl-2">{t(`sidebar.${subSection.title}`)}</h4>
                                     <ul className="flex text-[14px] flex-col gap-y-1">
                                         {subSection.routes.map((route) => (
                                             <li
@@ -65,7 +68,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                                         : "text-[#aaa] border-l-[#666] hover:border-l-[#fff] hover:text-[#fff]"
                                                     }`}>
                                                 <Link to={`/${route.id}`} className="block w-full h-full">
-                                                    {route.name}
+                                                    {t(`sidebar.${route.name}`)}
                                                 </Link>
                                             </li>
                                         ))}

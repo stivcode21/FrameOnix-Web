@@ -1,49 +1,49 @@
 // Configuración de secciones con subcategorías
 const sections = [
   {
-    title: "Getting Started",
+    title: "T-getting",
     routes: [
-      { id: "/", name: "Introduction" },
-      { id: "install", name: "Installation" },
-      { id: "usage", name: "Usage" },
-      { id: "contribute", name: "Contribute" },
+      { id: "/", name: "N-introduction" },
+      { id: "install", name: "N-install" },
+      { id: "usage", name: "N-usage" },
+      { id: "contribute", name: "N-contribute" },
     ],
   },
   {
-    title: "Components",
+    title: "T-components",
     subSections: [
       {
-        title: "Blog",
-        routes: [{ id: "onixBlogV1", name: "OnixBlog v1" }],
+        title: "ST-blog",
+        routes: [{ id: "onixBlogV1", name: "N-OnixBlogv1" }],
       },
       {
-        title: "Portfolio",
-        routes: [{ id: "onixPortfolioV1", name: "OnixPortfolio v1" }],
+        title: "ST-portfolio",
+        routes: [{ id: "onixPortfolioV1", name: "N-onixPortfolioV1" }],
       },
       {
-        title: "E-commerce",
-        routes: [{ id: "onixEcommerceV1", name: "OnixEcommerce v1" }],
+        title: "ST-ecommerce",
+        routes: [{ id: "onixEcommerceV1", name: "N-onixEcommerceV1" }],
       },
       {
-        title: "Landing Page",
-        routes: [{ id: "onixLandingPageV1", name: "OnixLandingPage v1" }],
+        title: "ST-landingPage",
+        routes: [{ id: "onixLandingPageV1", name: "N-onixLandingPageV1" }],
       },
     ],
   },
   {
-    title: "Customization",
+    title: "T-customization",
     routes: [
-      { id: "children", name: "Using Children" },
-      { id: "props", name: "Using Props" },
-      { id: "styling", name: "Using Styling" },
+      { id: "children", name: "N-children" },
+      { id: "props", name: "N-props" },
+      { id: "styling", name: "N-styling" },
     ],
   },
   {
-    title: "Use Cases",
+    title: "T-useCases",
     routes: [
-      { id: "blogs", name: "Blogs and Articles" },
-      { id: "portfolios", name: "Creative Portfolios" },
-      { id: "ecommerce", name: "E-commerce Solutions" },
+      { id: "blogs", name: "N-blogs" },
+      { id: "portfolios", name: "N-portfolios" },
+      { id: "ecommerces", name: "N-ecommerces" },
     ],
   },
 ];

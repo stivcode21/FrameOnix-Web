@@ -39,7 +39,7 @@ const Footer = () => {
                     <p className="text-xs text-[#777] no-select">
                         Open Source - Licensed under the{" "}
                         <span
-                            className="text-[#2fd484] transition-colors" >
+                            className="text-[#2fd484]" >
                             MIT License
                         </span>
                     </p>
