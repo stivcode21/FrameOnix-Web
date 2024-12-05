@@ -9,6 +9,7 @@
     "v": "v"
   },
   "sidebar": {
+    "Title": "Documentacion",
     "T-getting": "Empezando",
     "N-introduction": "Introduccion",
     "N-install": "Instalacion",
@@ -41,5 +42,12 @@
   "footer": {
     "contact": "Contáctanos",
     "rights": "Todos los derechos reservados"
+  },
+  "main": {
+    "title": "Cree sitios web rápidamente, totalmente personalizables sin romper la estructura ni la adaptabilidad",
+    "subtitle1": "Con FrameOnix, obtienes layouts completamente personalizables en React, perfectos para desarrolladores que quieren resultados rápidos sin perder control. Crea sitios web responsivos con solo unas Props. Ejemplos de nuestros componentes incluyen",
+    "subtitle2": "para un blog moderno o",
+    "subtitle3": "para una página de portafolio hermoso y dinámico. ¡Solo importa y personaliza!",
+    "btn": "Empezar"
   }
 }

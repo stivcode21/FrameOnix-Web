@@ -17,7 +17,7 @@ const App = () => {
         {showContainer && (
           <div className="md:Container flex h-full mt-[56px] z-10">
             <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-            <div className={`flex-1 px-5 py-2 overflow-y-auto h-[92%] md:h-[93%] scroll-green`}>
+            <div className={`p-5 flex-1 overflow-y-auto h-[92%] md:h-[93%] scroll-green`}>
               <Routes>
                 <Route path="/" element={<Intro />} />
                 <Route path="/install" element={<Install />} />
