@@ -39,15 +39,38 @@
     "N-portfolios": "Portafolios Creativos",
     "N-ecommerces": "Sistemas de E-commerce"
   },
-  "footer": {
-    "contact": "Contáctanos",
-    "rights": "Todos los derechos reservados"
-  },
   "main": {
     "title": "Cree sitios web rápidamente, totalmente personalizables sin romper la estructura ni la adaptabilidad",
     "subtitle1": "Con FrameOnix, obtienes layouts completamente personalizables en React, perfectos para desarrolladores que quieren resultados rápidos sin perder control. Crea sitios web responsivos con solo unas Props. Ejemplos de nuestros componentes incluyen",
     "subtitle2": "para un blog moderno o",
     "subtitle3": "para una página de portafolio hermoso y dinámico. ¡Solo importa y personaliza!",
     "btn": "Empezar"
+  },
+  "install": {
+    "title": "Comience a utilizar FrameOnix",
+    "T-p1": "FrameOnix te ofrece layouts completamente personalizables en React. Funciona importando componentes predefinidos que mantienen una estructura sólida y adaptable, permitiéndote modificar estilos y contenido con Children y Props sin complicaciones.",
+    "T-p2": "Es intuitivo, adaptable y eficiente, diseñado para desarrolladores que buscan construir sitios web increíbles con facilidad y rapidez.",
+    "separador1": "---",
+    "Import-p1": "Antes de instalar FrameOnix, asegúrate de tener",
+    "Import-p2": "instalado en tu sistema y actualizado a su última versión. Esto es necesario para usar",
+    "Import-p3": "que manejará la instalación y configuración de la librería. Puedes verificar tu versión actual ejecutando",
+    "Import-p4": "en tu terminal. Si no lo tienes instalado, descárgalo desde",
+    "separador2": "---",
+    "Step-1_title": "Instalar FrameOnix",
+    "Step-1_p1": "Instale",
+    "Step-1_p2": "a través de npm",
+    "Step-2_title": "Instalar Tailwind CSS",
+    "Step-2_p1": "Instale",
+    "Step-2_p2": "mediante npm y luego ejecute el comando init para generar su archivo.",
+    "Step-3_title": "Configurar las rutas de las plantillas",
+    "Step-3_p1": "Agregue las rutas de todos los archivos de plantilla en su",
+    "Step-3_p2": "archivo.",
+    "Step-4_title": "Añade las directivas Tailwind a tu CSS",
+    "Step-4_p1": "Agregue las",
+    "Step-4_p2": "directivas para cada una de las capas de Tailwind a su archivo CSS principal.",
+    "Step-5_title": "Comience a utilizar FrameOnix en su proyecto",
+    "Step-5_p1": "Comience a utilizar los componentes de FrameOnix para darle estilos y modificar su contenido.",
+    "Step-6_title": "Comience su proceso de construcción",
+    "Step-6_p1": "Ejecute su proceso de desarrollo con"
   }
 }

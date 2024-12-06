@@ -39,15 +39,38 @@
     "N-portfolios": "Creative Portfolios",
     "N-ecommerces": "E-commerce Systems"
   },
-  "footer": {
-    "contact": "Contact Us",
-    "rights": "All rights reserved"
-  },
   "main": {
     "title": "Create websites quickly, fully customizable without breaking the structure or adaptability",
     "subtitle1": "With FrameOnix, you get fully customizable layouts in React, perfect for developers who want fast results without losing control. Create responsive websites with just a few Props. Examples of our components include",
     "subtitle2": "for a modern blog or",
     "subtitle3": "for a beautiful and dynamic portfolio page. ¡Just import and customize!",
     "btn": "Get Started"
+  },
+  "install": {
+    "title": "Get Started with FrameOnix",
+    "T-p1": "FrameOnix offers you fully customizable layouts in React. It works by importing predefined components that maintain a solid and adaptive structure, allowing you to modify styles and content effortlessly using Children and Props.",
+    "T-p2": "It is intuitive, adaptable, and efficient, designed for developers seeking to build amazing websites with ease and speed.",
+    "important": "Important!",
+    "Import-p1": "Before installing FrameOnix, make sure you have",
+    "Import-p2": "installed on your system and updated to its latest version. This is required to use",
+    "Import-p3": "which will handle the installation and setup of the library. You can check your current version by running",
+    "Import-p4": "in your terminal. If you don’t have it installed, download it from",
+    "separador2": "---",
+    "Step-1_title": "Install FrameOnix",
+    "Step-1_p1": "Install",
+    "Step-1_p2": "through npm",
+    "Step-2_title": "Install Tailwind CSS",
+    "Step-2_p1": "Install",
+    "Step-2_p2": "via npm and then run the init command to generate its file.",
+    "Step-3_title": "Configure the template paths",
+    "Step-3_p1": "Add the paths of all template files in your",
+    "Step-3_p2": "file.",
+    "Step-4_title": "Add the Tailwind directives to your CSS",
+    "Step-4_p1": "Add the",
+    "Step-4_p2": "directives for each of the Tailwind layers to your index CSS file.",
+    "Step-5_title": "Start using FrameOnix in your project",
+    "Step-5_p1": "Start using FrameOnix components to style and modify your content.",
+    "Step-6_title": "Start your build process",
+    "Step-6_p1": "Run your development process with"
   }
 }

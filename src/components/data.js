@@ -1,14 +1,15 @@
-// Configuración de secciones con subcategorías
+// data de sidebar
 const sections = [
   {
     title: "T-getting",
     routes: [
-      { id: "/", name: "N-introduction" },
+      { id: "doc", name: "N-introduction" },
       { id: "install", name: "N-install" },
       { id: "usage", name: "N-usage" },
       { id: "contribute", name: "N-contribute" },
     ],
   },
+  //daya de subcategorias
   {
     title: "T-components",
     subSections: [

@@ -42,12 +42,12 @@ const Navbar = ({ sidebarOpen, setSidebarOpen, showContainer, }) => {
         <nav className={`fixed top-0 left-0 right-0 z-50 md:bg-transparent backdrop-blur-sm bg-opacity-80 transition-all ease-in-out duration-400 border-b border-b-[#2fd48432]
         ${navbarOpen ? "bg-[#0E1711]" : "bg-transparent"}`}>
             <div className='Container flex flex-wrap items-center justify-between py-1'>
-                <div className={`flex justify-center items-center no-select`}>
+                <a href='/' className={`flex justify-center items-center no-select`}>
                     <img src="/f.png" alt="img-logo" className='w-10 h-10' />
                     <h1 className='text-2xl pt-4 font-semibold -ml-3'>rameOni</h1>
                     <img src="/x.png" alt="img-logo" className='w-9 h-9 mt-1 ' />
                     <span className="text-[#2fd484] text-sm mt-6 ml-1">{`${t('header.v')}1.0.0`}</span>
-                </div>
+                </a>
 
                 {/* botones de navegacion en Mobile*/}
                 <div className='mobile-menu md:hidden transition-all ease-in-out duration-700 flex gap-2'>
@@ -68,12 +68,12 @@ const Navbar = ({ sidebarOpen, setSidebarOpen, showContainer, }) => {
                         !sidebarOpen ?
                             (<button onClick={() => toggleSidebar(true)}
                                 className={`flex items-center px-2 py-1 border border-[#2fd48432] hover:border-[#2fd48498] transition-all ease-in-out
-                                   ${showContainer ? "block" : "hidden"}`}>
+                                   ${showContainer ? "hidden" : "block"}`}>
                                 <Bars3Icon className='h-6 w-6'></Bars3Icon>
                             </button>) :
                             (<button onClick={() => toggleSidebar(false)}
                                 className={`flex items-center px-2 py-1 border border-[#2fd48432] hover:border-[#2fd48498] transition-all ease-in-out
-                                ${showContainer ? "block" : "hidden"}`}>
+                                ${showContainer ? "hidden" : "block"}`}>
                                 <XMarkIcon className='h-6 w-6'></XMarkIcon>
                             </button>)
                     }

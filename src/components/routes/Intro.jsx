@@ -5,7 +5,7 @@ const Presentation = () => {
     return (
         <>
             <section className='h-screen w-full'>
-                <h1 className='text-[#2fd484] text-sm mb-4'>
+                <h1 className='text-[#2fd484] text-sm mb-6'>
                     introduccion
                 </h1>
                 <h1 className="text-3xl font-bold">Bienvenido a Mi Librería</h1>

@@ -1,11 +1,18 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { Header, Install, Sidebar, Main, Footer, Intro, Usage, Contribute } from "./components";
-import i18n from "../public/i18n/i18n";
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false); //contrala el boton sidebar mobile
-  const [showContainer, setShowContainer] = useState(false); // Controla la visibilidad del contenedor
+  const [showContainer, setShowContainer] = useState(true); // Controla la visibilidad del contenedor
+
+  useEffect(() => {
+    if (window.location.pathname !== "/") {
+      setShowContainer(false); // Mostrar el contenedor completo si no está en la raíz
+    } else {
+      setShowContainer(true); // Mostrar Main si está en la raíz
+    }
+  }, [])
 
   return (
     <Router>
@@ -14,12 +21,13 @@ const App = () => {
 
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} showContainer={showContainer} />
         {/* Mostrar el contenedor solo si showContainer es true */}
-        {showContainer && (
+        {!showContainer ? (
           <div className="md:Container flex h-full mt-[56px] z-10">
             <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
             <div className={`p-5 flex-1 overflow-y-auto h-[92%] md:h-[93%] scroll-green`}>
               <Routes>
-                <Route path="/" element={<Intro />} />
+                <Route path="/" element={<Navigate to="/doc" />} />
+                <Route path="/doc" element={<Intro />} />
                 <Route path="/install" element={<Install />} />
                 <Route path="/usage" element={<Usage />} />
                 <Route path="/contribute" element={<Contribute />} />
@@ -28,12 +36,12 @@ const App = () => {
               <Footer />
             </div>
           </div>
-        )}
-
-        {/* Ruta inicial que muestra el componente Main */}
-        <Routes>
-          <Route path="/" element={<Main setShowContainer={setShowContainer} sidebarOpen={sidebarOpen} />} />
-        </Routes>
+        ) : (
+          <Routes> {/* Ruta inicial que muestra el componente Main */}
+            <Route path="/" element={<Main setShowContainer={setShowContainer} sidebarOpen={sidebarOpen} />} />
+          </Routes>
+        )
+        }
       </div>
     </Router>
   );

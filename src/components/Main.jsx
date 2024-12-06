@@ -1,9 +1,9 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
 
-const Main = ({ setShowContainer, sidebarOpen }) => {
+const Main = ({ setShowContainer }) => {
     const handleClick = () => {
-        setShowContainer(true); // Muestra el contenedor principal
+        setShowContainer(false); // Muestra el contenedor principal
     };
 
     const { t } = useTranslation();
@@ -27,7 +27,7 @@ const Main = ({ setShowContainer, sidebarOpen }) => {
                 </div>
                 <button
                     onClick={handleClick}
-                    className="px-6 py-2 z-20 rounded-lg  bg-[#2fd48432] hover:bg-[#2fd4847e] text-white border border-[#2fd484] hover:border-[#888] transition-all shadow-xl">
+                    className="px-6 py-2 z-20 rounded-lg  bg-[#2fd48432] hover:bg-[#2fd4847e] text-white border border-[#2fd484] transition-all ease-in-out shadow-xl">
                     {t('main.btn')}
                 </button>
             </div>

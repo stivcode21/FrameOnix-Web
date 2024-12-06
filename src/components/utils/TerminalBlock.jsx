@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ClipboardDocumentListIcon, ClipboardDocumentCheckIcon } from "@heroicons/react/24/solid";
 
-const TerminalBlock = ({ command, title, ifExist }) => {
+const TerminalBlock = ({ command, title }) => {
     const [copied, setCopied] = useState(false);
 
     const handleCopy = () => {
@@ -12,13 +12,13 @@ const TerminalBlock = ({ command, title, ifExist }) => {
     };
 
     return (
-        <div className="w-full bg-[#0E221E] border border-[#333] text-white rounded-lg font-mono text-sm shadow-md">
+        <div className="w-full bg-[#0c1c19] border border-[#333] text-white rounded-lg font-mono text-sm shadow-md">
             {/* Header */}
             <div className="flex justify-between items-center h-12">
-                <div className="flex justify-center items-center h-8 bg-[#0E221E] w-fit border-b border-b-[#2fd484]">
+                <div className="flex justify-center items-center h-8 w-fit border-b border-b-[#2fd484]">
                     {
-                        ifExist ? (
-                            <p className="w-full px-4 text-[#2fd484]">{title}</p>
+                        title ? (
+                            <h1 className="w-full text-xs px-4 text-[#2fd484]">{title}</h1>
                         ) : (
                             <div className="px-4 h-8 flex justify-center items-center gap-x-2">
                                 <div className="w-3 h-3 bg-red-500 rounded-full"></div>
@@ -39,7 +39,7 @@ const TerminalBlock = ({ command, title, ifExist }) => {
             </div>
 
             {/* Contenido del comando */}
-            <pre className="overflow-x-auto whitespace-pre-wrap p-4">
+            <pre className="overflow-x-auto text-sm whitespace-pre-wrap p-4">
                 <code>{command}</code>
             </pre>
 

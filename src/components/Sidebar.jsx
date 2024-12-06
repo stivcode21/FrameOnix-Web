@@ -26,7 +26,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             }`} >
             <div className="flex justify-start items-center mt-5 mb-8 gap-x-1">
                 <BookOpenIcon fill="#2fd484" className="w-8 h-8" />
-                <h2 className="text-xl font-bold">{t('sidebar.Title')}</h2>
+                <h2 className="text-xl font-semibold">{t('sidebar.Title')}</h2>
             </div>
             <nav>
                 {sections.map((section, index) => (
@@ -40,7 +40,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                                         key={route.id} // Identificador único para cada ruta
                                         onClick={() => handleMenu(route.id)} // Marca la ruta activa y cierra el menú
                                         className={`cursor-pointer w-fit px-4 mr-4 hover:border-l transition-all ease-in-out 
-                                        ${location.pathname === (route.id === "/" ? route.id : `/${route.id}`)
+                                        ${location.pathname === (route.id === "/doc" ? route.id : `/${route.id}`)
                                                 ? "text-[#2fd484] border-l border-l-[#2fd484] hover:text-[#2fd484]" // Estilo activo
                                                 : "text-[#aaa] border-l-[#666] hover:border-l-[#fff] hover:text-[#fff]" // Estilo inactivo
                                             }`}>
