@@ -45,7 +45,7 @@ const Navbar = ({ sidebarOpen, setSidebarOpen, showContainer, }) => {
                 <a href='/' className={`flex justify-center items-center no-select`}>
                     <img src="/f.png" alt="img-logo" className='w-10 h-10' />
                     <h1 className='text-2xl pt-4 font-semibold -ml-3'>rameOni</h1>
-                    <img src="/x.png" alt="img-logo" className='w-9 h-9 mt-1 ' />
+                    <img src="/x.png" alt="img-logo" className='w-10 h-10' />
                     <span className="text-[#2fd484] text-sm mt-6 ml-1">{`${t('header.v')}1.0.0`}</span>
                 </a>
 

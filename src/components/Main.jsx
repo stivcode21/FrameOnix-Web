@@ -10,12 +10,12 @@ const Main = ({ setShowContainer }) => {
 
     return (
         <div className={`Container flex flex-col gap-y-4 justify-center items-center h-full bg-[url(/bg-main.png)] bg-cover bg-center bg-no-repeat`}>
-            <h1 className="text-center text-3xl md:text-[3rem] font-extrabold md:leading-[53px]">
+            <h1 className="text-center text-3xl md:text-5xl font-extrabold md:leading-[53px] tracking-wide uppercase">
                 {t('main.title')}
             </h1>
             <div className="flex flex-col gap-y-4 items-center justify-center text-sm md:w-[85%] xl:w-[60%]">
-                <p className="text-center text-[16px] text-slate-400">{t('main.subtitle1')}</p>
-                <div className="flex flex-col bg-[#0E221E] border border-[#333] shadow-md p-4  rounded-lg font-mono ">
+                <h3 className="text-center text-[16px] text-slate-400">{t('main.subtitle1')}</h3>
+                <div className="flex flex-col bg-[#0c1c19] border border-[#333] shadow-md p-4  rounded-lg font-mono ">
                     <div className="flex w-full gap-x-2">
                         <span className="text-[#2fd484]">{`<OnixBlogv1/>`}</span>
                         <p>{t('main.subtitle2')}</p>

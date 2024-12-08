@@ -3,6 +3,7 @@ import TerminalBlock from '../utils/TerminalBlock';
 import StepbyStep from '../utils/StepbyStep';
 import { ExclamationTriangleIcon } from '@heroicons/react/24/solid';
 import { useTranslation } from 'react-i18next';
+import Footer from '../Footer';
 
 const Install = () => {
 
@@ -13,17 +14,17 @@ const Install = () => {
             <section className='flex flex-col'>
                 <h1 className='text-[#2fd484] text-sm mb-6'>{t('sidebar.N-install')}</h1>
                 <h2 className='text-[27px] md:text-4xl font-bold mb-4'>{t('install.title')}</h2>
-                <p className='mb-4 lg:w-[75%] text-slate-300'>
+                <p className='mb-4 lg:w-[75%] text-slate-100'>
                     {t('install.T-p1')}
                 </p>
-                <p className='lg:w-[75%] text-slate-300'>
+                <p className='lg:w-[75%] text-slate-100'>
                     {t('install.T-p2')}
                 </p>
                 <div className='relative my-10 bg-black bg-opacity-25 p-2 md:p-4 rounded-md xl:w-[75%]'>
-                    <div className='absolute w-5 h-5 top-3 md:top-5 left-2 md:left-4'>
+                    <div className='absolute w-6 h-6 -top-2 left-2'>
                         <ExclamationTriangleIcon className='fill-[#2fd484]' />
                     </div>
-                    <p className='text-slate-300 text-sm leading-6 pr-4 lg:pr-10 text-justify ml-8 md:ml-8'>
+                    <p className='text-slate-300 text-sm leading-6 pr-4 lg:pr-10 text-justify ml-2 md:ml-4'>
                         {t('install.Import-p1')}
                         <span className='mx-2 font-semibold'>Node.js</span>
                         {t('install.Import-p2')}
@@ -35,7 +36,7 @@ const Install = () => {
                     </p>
                 </div>
 
-                <div className='flex flex-col gap-y-16 mt-8'>
+                <div className='flex flex-col gap-y-20 mt-8'>
                     <div className='flex w-full flex-col lg:flex-row lg:gap-x-2'>
                         <StepbyStep
                             number={1}
@@ -127,6 +128,7 @@ export default function App() {
                             command={`npm run dev`} />
                     </div>
                 </div>
+                <Footer />
             </section>
         </>
     )

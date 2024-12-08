@@ -20,7 +20,7 @@ const App = () => {
         <div className="w-full h-full -z-5 absolute bg-[url(https://img.freepik.com/foto-gratis/luces-neon-degradadas-abstractas_23-2149279163.jpg?ga=GA1.1.1028302612.1733019624&semt=ais_hybrid)] bg-no-repeat bg-cover opacity-20"></div>
 
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} showContainer={showContainer} />
-        {/* Mostrar el contenedor solo si showContainer es true */}
+        {/* Mostrar el contenedor solo si showContainer es false */}
         {!showContainer ? (
           <div className="md:Container flex h-full mt-[56px] z-10">
             <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
@@ -32,8 +32,6 @@ const App = () => {
                 <Route path="/usage" element={<Usage />} />
                 <Route path="/contribute" element={<Contribute />} />
               </Routes>
-
-              <Footer />
             </div>
           </div>
         ) : (

@@ -3,11 +3,13 @@
     "en": "Ingles",
     "es": "Español"
   },
+
   "header": {
     "contribute": "Contribuir",
     "blog": "Blog",
     "v": "v"
   },
+
   "sidebar": {
     "Title": "Documentacion",
     "T-getting": "Empezando",
@@ -39,6 +41,7 @@
     "N-portfolios": "Portafolios Creativos",
     "N-ecommerces": "Sistemas de E-commerce"
   },
+
   "main": {
     "title": "Cree sitios web rápidamente, totalmente personalizables sin romper la estructura ni la adaptabilidad",
     "subtitle1": "Con FrameOnix, obtienes layouts completamente personalizables en React, perfectos para desarrolladores que quieren resultados rápidos sin perder control. Crea sitios web responsivos con solo unas Props. Ejemplos de nuestros componentes incluyen",
@@ -46,16 +49,60 @@
     "subtitle3": "para una página de portafolio hermoso y dinámico. ¡Solo importa y personaliza!",
     "btn": "Empezar"
   },
+
+  "intro": {
+    "title": "Bienvenido a",
+    "T-p1": "FrameOnix es una biblioteca diseñada para desarrolladores que buscan creatividad, eficiencia y simplicidad en sus proyectos web. Con un enfoque en la personalización total de cada componente, esta herramienta te permite transformar tus ideas en diseños modernos y funcionales, sin sacrificar tiempo ni complejidad técnica.",
+
+    "subtitle1": "¿Qué es FrameOnix?",
+    "S-p1": "FrameOnix es una solución basada en React que ofrece componentes diseñados para representar el layout completo de diferentes tipos de páginas web. En lugar de trabajar con secciones individuales, cada componente de FrameOnix incluye la estructura completa de un diseño específico, como un blog, un portafolio, una tienda en línea, entre otros.",
+    "S-p2": "Cada componente está dividido internamente en secciones (como encabezados, áreas principales, pies de página, etc.), lo que permite una personalización total de estilos y contenido mientras se conserva la coherencia estructural del diseño.",
+    "S-p3": "Además, como un proyecto de código abierto, FrameOnix está en constante evolución gracias a la colaboración de su comunidad. ¡Tú también puedes contribuir con tus ideas, mejoras y nuevas funcionalidades para hacerlo aún más útil para todos!",
+
+    "subtitle2": "¿Por qué elegir FrameOnix?",
+    "S2-p1": "FrameOnix está diseñado para ser versátil y accesible para cualquier tipo de desarrollador o diseñador. Algunas razones para usar esta herramienta incluyen:",
+
+    "2li-title1": "Personalización completa:",
+    "2li-p1": "Cambia estilos, textos e imágenes de cada sección fácilmente con Props y children.",
+    "2li-title2": "Open Source:",
+    "2li-p2": "Como proyecto de código abierto, FrameOnix te da libertad para adaptarlo y contribuir al crecimiento de la herramienta.",
+    "2li-title3": "Diseño modular:",
+    "2li-p3": "Cada componente está pensado para ser reutilizable y flexible, permitiéndote integrar rápidamente tus ideas sin comprometer la estructura del diseño.",
+    "2li-title4": "Eficiencia:",
+    "2li-p4": "Con FrameOnix puedes reducir el tiempo dedicado al diseño de interfaces y concentrarte en lo que realmente importa: el contenido.",
+
+    "subtitle3": "¿Por qué elegir FrameOnix?",
+    "S3-p1": "FrameOnix está diseñado para todos, pero es especialmente útil para:",
+    "3li-title1": "Freelancers:",
+    "3li-p1": "Que buscan diseños fáciles de modificar para entregar resultados rápidos y personalizados a sus clientes.",
+    "3li-title2": "Desarrolladores backend:",
+    "3li-p2": "Que quieren crear páginas funcionales y estéticas sin tener que aprender diseño desde cero.",
+    "3li-title3": "Aprendices de diseño web:",
+    "3li-p3": "Que aún no saben cómo empezar un diseño desde cero y necesitan una base sólida y sencilla para trabajar.",
+
+    "subtitle4": "¿Qué encontrarás en esta documentación?",
+    "4li-p1": "Una guía para instalar y configurar FrameOnix.",
+    "4li-p2": "Ejemplos prácticos de cómo usar sus Props principales: id, styles, content y children.",
+    "4li-p3": "Una sección dedicada a cada componente, donde se detalla cómo modificar sus layouts y contenido de manera efectiva.",
+    "4li-p4": "Instrucciones sobre cómo contribuir al desarrollo del proyecto.",
+
+    "subtitle5": "Un Proyecto Open Source",
+    "5sub-p1": "Como proyecto open-source, FrameOnix invita a la comunidad a participar en su desarrollo. Ya sea corrigiendo errores, sugiriendo nuevas funcionalidades, o mejorando la documentación, cada contribución es valiosa.",
+    "5sub-p2": "Si deseas colaborar, visita la sección Contributing para obtener una guía paso a paso sobre cómo puedes aportar al proyecto. Tu participación no solo ayuda a mejorar FrameOnix, sino que también contribuye a una herramienta que cientos de personas en la comunidad podrán usar.",
+
+    "nota1": "¡Vamos, anímate a usar y descubrir todo lo que puedes lograr con esta librería fácil de usar! ¿Qué esperas? Ve a la sección de Instalación y comienza tu aventura de diseño ahora mismo!"
+  },
+
   "install": {
     "title": "Comience a utilizar FrameOnix",
     "T-p1": "FrameOnix te ofrece layouts completamente personalizables en React. Funciona importando componentes predefinidos que mantienen una estructura sólida y adaptable, permitiéndote modificar estilos y contenido con Children y Props sin complicaciones.",
     "T-p2": "Es intuitivo, adaptable y eficiente, diseñado para desarrolladores que buscan construir sitios web increíbles con facilidad y rapidez.",
-    "separador1": "---",
+
     "Import-p1": "Antes de instalar FrameOnix, asegúrate de tener",
     "Import-p2": "instalado en tu sistema y actualizado a su última versión. Esto es necesario para usar",
     "Import-p3": "que manejará la instalación y configuración de la librería. Puedes verificar tu versión actual ejecutando",
     "Import-p4": "en tu terminal. Si no lo tienes instalado, descárgalo desde",
-    "separador2": "---",
+
     "Step-1_title": "Instalar FrameOnix",
     "Step-1_p1": "Instale",
     "Step-1_p2": "a través de npm",
@@ -72,5 +119,45 @@
     "Step-5_p1": "Comience a utilizar los componentes de FrameOnix para darle estilos y modificar su contenido.",
     "Step-6_title": "Comience su proceso de construcción",
     "Step-6_p1": "Ejecute su proceso de desarrollo con"
+  },
+
+  "usage": {
+    "title": "Uso de FrameOnix",
+    "T-p1": "Con Frameonix, puedes modificar los estilos, textos e imágenes de cada sección del layout con props simples. Si deseas más control, también puedes reemplazar completamente secciones específicas usando children, manteniendo siempre la estructura y adaptabilidad del diseño.",
+
+    "Step-1_title": "Uso General",
+    "Step-1_p1": "Para empezar a usar Frameonix, importa el componente deseado en tu proyecto React y personalízalo según tus necesidades. Cada componente tiene props intuitivas y documentadas para modificar su comportamiento, estilos y contenido.",
+
+    "import1_title": "Simplificando la Personalización de tus Diseños",
+    "import1_p1": "Con una estructura compacta y pensada para facilitar el trabajo, Frameonix hace que trabajar con props sea intuitivo y nada abrumador, incluso para quienes están empezando en el desarrollo web.",
+    "import1_p2": "Cada",
+    "import1_span1": "Seccion",
+    "import1_p3": "de un componente esta diseñado para ser personalizable mediante",
+    "import1_span2": "4 Props",
+    "import1_p4": "principales, aplicables a todas sus secciones:",
+
+    "Step-2-title": "ID",
+    "Step-2_p1": "Asigna un identificador único para cada sección que hace parte de un componente de FrameOnix, útil para navegaciones internas como en un navbar.",
+    "Nota1": "Ten en cuenta que los ID deben coincidir con los nombres asignados en el navbar para funcionar correctamente.",
+
+    "Step-3-title": "STYLES",
+    "Step-3-p1": "El objeto styles está diseñado para facilitar la personalización de estilos CSS de manera precisa y estructurada. Te permite modificar cada sección de un componente con un control total, manteniendo la estructura del diseño general.",
+    "Step-3-subT": "¿Cómo funciona?",
+    "Step-3-p2": "Cada clave dentro del objeto styles representa una parte específica de la sección, como el fondo, títulos, botones u otros elementos visuales. Los valores son las clases o estilos CSS que se aplicarán a esas claves. Esto te permite ajustar los estilos sin tocar el código interno del componente.",
+
+    "Step-4-title": "CONTENT",
+    "Step-4-p1": "El objeto content está diseñado para permitirte cambiar de manera precisa y eficiente los elementos clave de una sección, como textos, imágenes o enlaces. Esto hace que la personalización sea sencilla sin comprometer la estructura del diseño",
+    "Step-4-subT": "¿Cómo funciona?",
+    "Step-4-p2": "Cada clave dentro del objeto content está vinculada a un elemento específico de la sección. Al modificar los valores, puedes actualizar el contenido visual sin necesidad de alterar el código del componente directamente.",
+
+    "nota-2": "Cada componente tiene documentación específica en la sección Components de esta página. Allí encontrarás todas las propiedades disponibles, ejemplos detallados y las mejores prácticas para sacar el máximo provecho de Frameonix.",
+
+    "Step-5-title": "CHILDREN",
+    "Step-5-p1": "La propiedad children está diseñada para brindarte un control total sobre una sección específica de un componente. Te permite reemplazar completamente el contenido predeterminado de esa sección con tu propio diseño y elementos personalizados, manteniendo la estructura general del layout.",
+    "Step-5-subT": "¿Cómo funciona?",
+    "Step-5-p2": "Cuando utilizas children, la sección correspondiente deja de depender de las propiedades predeterminadas",
+    "Step-5-p3": "y se renderiza exclusivamente con los elementos que defines dentro de children. Esto te da la libertad de diseñar esa parte según tus necesidades, sin restricciones.",
+
+    "text-footer": "Con esta estructura, Frameonix asegura que tengas control total sin perder simplicidad. ¡Empieza a personalizar y crea páginas increíbles con facilidad!"
   }
 }

@@ -39,7 +39,7 @@ const TerminalBlock = ({ command, title }) => {
             </div>
 
             {/* Contenido del comando */}
-            <pre className="overflow-x-auto text-sm whitespace-pre-wrap p-4">
+            <pre className="overflow-x-auto text-sm whitespace-pre-wrap px-4 py-2">
                 <code>{command}</code>
             </pre>
 

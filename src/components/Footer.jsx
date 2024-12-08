@@ -1,10 +1,10 @@
 import React from 'react'
 import { InboxArrowDownIcon, ClockIcon } from '@heroicons/react/24/solid'
 
-const Footer = () => {
+const Footer = ({ footer }) => {
     return (
         <>
-            <div className="mt-36 py-4 border-t border-t-[#222] text-sm flex flex-col text-gray-400 gap-y-2">
+            <div className={`mt-36 py-4 border-t border-t-[#222] text-sm flex flex-col text-gray-400 gap-y-2 Z-30 ${footer ? 'hidden' : 'block'}`}>
                 <div className='flex justify-between items-center' >
                     <ul className="flex gap-4">
                         <li>
