@@ -39,8 +39,7 @@ function App() {
                     </div>
 
                     {/* contenedor info */}
-                    <div className="Container flex flex-col gap-y-4 justify-center items-center my-10 px-6 py-10 bg-gradient-to-r bg-[#050505] relative rounded-lg shadow-lg border border-[#555]">
-                        <div className="w-full h-full -z-5 absolute bg-[url(https://img.freepik.com/foto-gratis/luces-neon-degradadas-abstractas_23-2149279163.jpg?ga=GA1.1.1028302612.1733019624&semt=ais_hybrid)] bg-no-repeat bg-cover opacity-15"></div>
+                    <div className="Container flex flex-col gap-y-4 justify-center items-center my-10 px-6 py-10 bg-gradient-to-r  relative rounded-lg shadow-lg border border-[#555]">
 
                         <h2 className="text-center text-2xl lg:text-3xl font-extrabold uppercase text-slate-100 tracking-wide">
                             {t('usage.import1_title')}
@@ -68,14 +67,8 @@ function App() {
                             text1={t('usage.Step-2_p1')}
                             v2={true}
                             children={(
-                                <div className='relative'>
-                                    <div className='absolute w-6 h-6 -top-2 left-2'>
-                                        <ExclamationTriangleIcon className='fill-[#2fd484]' />
-                                    </div>
-                                    <Note
-                                        Ntext1={t('usage.Nota1')}
-                                    />
-                                </div>
+                                <Note
+                                    Ntext1={t('usage.Nota1')} />
                             )}
                         />
                         <TerminalBlock
@@ -141,7 +134,7 @@ function App() {
                             v2={true}
                         />
                         <TerminalBlock title={'App.jsx'} command={`return (
-  <OnixBlog
+  <OnixBlogv1
     mainProps={{
       id: "main",
       content: {
@@ -183,7 +176,7 @@ function App() {
                             v2={true}
                         />
                         <TerminalBlock title={'App.jsx'} command={`return (
-  <OnixBlog
+  <OnixBlogv1
     mainProps={{
       children: (
         <div className="flex flex-col">

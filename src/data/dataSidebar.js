@@ -31,22 +31,22 @@ const sections = [
       },
     ],
   },
-  {
-    title: "T-customization",
-    routes: [
-      { id: "children", name: "N-children" },
-      { id: "props", name: "N-props" },
-      { id: "styling", name: "N-styling" },
-    ],
-  },
-  {
-    title: "T-useCases",
-    routes: [
-      { id: "blogs", name: "N-blogs" },
-      { id: "portfolios", name: "N-portfolios" },
-      { id: "ecommerces", name: "N-ecommerces" },
-    ],
-  },
+  // {
+  //   title: "T-customization",
+  //   routes: [
+  //     { id: "children", name: "N-children" },
+  //     { id: "props", name: "N-props" },
+  //     { id: "styling", name: "N-styling" },
+  //   ],
+  // },
+  // {
+  //   title: "T-useCases",
+  //   routes: [
+  //     { id: "blogs", name: "N-blogs" },
+  //     { id: "portfolios", name: "N-portfolios" },
+  //     { id: "ecommerces", name: "N-ecommerces" },
+  //   ],
+  // },
 ];
 
 export { sections };

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { BookOpenIcon } from "@heroicons/react/24/solid";
 import { useTranslation } from 'react-i18next';
-import { sections } from "./data";
+import { sections } from "../data/dataSidebar";
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
     const location = useLocation(); // Obtiene (ruta activa).
@@ -20,7 +20,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
     };
 
     return (
-        <aside className={`pt-2 py-2 pb-16 md:pb-4 overflow-y-auto h-full md:h-[93%] scroll-green duration-400 transition-all ease-in-out ${sidebarOpen
+        <aside className={`pt-2 py-2 pb-16 md:pb-4 overflow-y-auto h-full md:h-[93%] scroll-green duration-400 transition-all ease-in-out border-r border-r-[#2fd48432] ${sidebarOpen
             ? "fixed w-[65%] top-15 left-0 z-50 px-5 bg-[#0E1711] bg-opacity-[97%] h-full opacity-100 visible translate-x-0"
             : "hidden  opacity-0 invisible md:w-50 lg:w-60 md:block md:opacity-100 md:visible"
             }`} >

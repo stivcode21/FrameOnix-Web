@@ -51,8 +51,8 @@
   },
 
   "intro": {
-    "title": "Bienvenido a",
-    "T-p1": "FrameOnix es una biblioteca diseñada para desarrolladores que buscan creatividad, eficiencia y simplicidad en sus proyectos web. Con un enfoque en la personalización total de cada componente, esta herramienta te permite transformar tus ideas en diseños modernos y funcionales, sin sacrificar tiempo ni complejidad técnica.",
+    "T-p1": "FrameOnix es la solución ideal para desarrolladores que desean potenciar sus proyectos web con creatividad y eficiencia. Esta biblioteca te brinda la capacidad de personalizar cada componente según tus necesidades específicas, permitiéndote dar vida a diseños únicos que combinan modernidad y funcionalidad. Ya sea que trabajes en proyectos pequeños o aplicaciones complejas, FrameOnix está diseñada para facilitar tu flujo de trabajo, ahorrándote tiempo sin comprometer la calidad técnica.",
+    "T-p2": "Con herramientas innovadoras y una interfaz intuitiva, FrameOnix convierte la construcción de interfaces web en una experiencia ágil y flexible. Su enfoque en la simplicidad no solo fomenta la creatividad, sino que también garantiza resultados profesionales en cada etapa del desarrollo. Esta biblioteca ha sido creada pensando en desarrolladores de todos los niveles, ofreciendo documentación clara y ejemplos prácticos para que puedas aprovechar al máximo su potencial.",
 
     "subtitle1": "¿Qué es FrameOnix?",
     "S-p1": "FrameOnix es una solución basada en React que ofrece componentes diseñados para representar el layout completo de diferentes tipos de páginas web. En lugar de trabajar con secciones individuales, cada componente de FrameOnix incluye la estructura completa de un diseño específico, como un blog, un portafolio, una tienda en línea, entre otros.",
@@ -71,7 +71,7 @@
     "2li-title4": "Eficiencia:",
     "2li-p4": "Con FrameOnix puedes reducir el tiempo dedicado al diseño de interfaces y concentrarte en lo que realmente importa: el contenido.",
 
-    "subtitle3": "¿Por qué elegir FrameOnix?",
+    "subtitle3": "¿Para quién es FrameOnix?",
     "S3-p1": "FrameOnix está diseñado para todos, pero es especialmente útil para:",
     "3li-title1": "Freelancers:",
     "3li-p1": "Que buscan diseños fáciles de modificar para entregar resultados rápidos y personalizados a sus clientes.",

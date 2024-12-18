@@ -48,8 +48,8 @@
   },
 
   "intro": {
-    "title": "welcome to",
-    "T-p1": "FrameOnix is ​​a library designed for developers looking for creativity, efficiency and simplicity in their web projects. With a focus on full customization of each component, this tool allows you to transform your ideas into modern and functional designs, without sacrificing time or technical complexity.",
+    "T-p1": "FrameOnix is ​​the ideal solution for developers who want to boost their web projects with creativity and efficiency. This library gives you the ability to customize each component to your specific needs, allowing you to bring to life unique designs that combine modernity and functionality. Whether you work on small projects or complex applications, FrameOnix is ​​designed to facilitate your workflow, saving you time without compromising technical quality.",
+    "T-p2": "With innovative tools and an intuitive interface, FrameOnix makes building web interfaces a flexible and agile experience. Its focus on simplicity not only encourages creativity, but also ensures professional results at every stage of development. This library has been created with developers of all levels in mind, offering clear documentation and practical examples so you can take full advantage of its potential.",
 
     "subtitle1": "¿What is FrameOnix?",
     "S-p1": "FrameOnix is ​​a React-based solution that offers components designed to represent the complete layout of different types of web pages. Instead of working with individual sections, each FrameOnix component includes the entire structure of a specific design, such as a blog, portfolio, online store, and more.",
@@ -68,7 +68,7 @@
     "2li-title4": "Efficiency:",
     "2li-p4": "With FrameOnix you can reduce the time spent designing interfaces and focus on what really matters: the content.",
 
-    "subtitle3": "¿Why choose FrameOnix?",
+    "subtitle3": "¿Who is FrameOnix for?",
     "S3-p1": "FrameOnix is ​​designed for everyone, but is especially useful for:",
     "3li-title1": "Freelancers:",
     "3li-p1": "Who are looking for designs that are easy to modify to deliver fast and personalized results to their clients.",
