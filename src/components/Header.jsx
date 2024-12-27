@@ -1,4 +1,4 @@
-import NavLink from './utils/Navlink';
+import NavLink from './utils/NavLink.jsx';
 import MenuOverlay from './utils/MenuOverlay';
 import { EllipsisVerticalIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useTranslation } from 'react-i18next';
