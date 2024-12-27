@@ -1,6 +1,6 @@
 import React from 'react'
-import TerminalBlock from '../utils/TerminalBlock';
-import StepbyStep from '../utils/StepbyStep';
+import TerminalBlock from '../utils/TerminalBlock.jsx';
+import StepbyStep from '../utils/StepbyStep.jsx';
 import { ExclamationTriangleIcon } from '@heroicons/react/24/solid';
 import { useTranslation } from 'react-i18next';
 import Footer from '../Footer';

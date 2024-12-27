@@ -1,9 +1,9 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import TerminalBlock from '../utils/TerminalBlock';
-import StepbyStep from '../utils/StepbyStep';
+import TerminalBlock from '../utils/TerminalBlock.jsx';
+import StepbyStep from '../utils/StepbyStep.jsx';
 import { ExclamationTriangleIcon } from '@heroicons/react/24/solid';
-import Note from '../utils/Note';
+import Note from '../utils/Note.jsx';
 import Footer from '../Footer';
 
 const Examples = () => {

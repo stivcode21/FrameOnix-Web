@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../Footer'
 import { useTranslation } from 'react-i18next';
-import DynamicIndex from '../utils/DynamicIndex';
+import DynamicIndex from '../utils/DynamicIndex.jsx';
 
 const Presentation = () => {
 

@@ -1,9 +1,9 @@
 import React from 'react'
-import TableDoc from '../utils/TableDoc';
+import TableDoc from '../utils/TableDoc.jsx';
 import { useTranslation } from 'react-i18next';
-import TerminalBlock from '../utils/TerminalBlock';
+import TerminalBlock from '../utils/TerminalBlock.jsx';
 import Footer from '../Footer';
-import Note from '../utils/Note';
+import Note from '../utils/Note.jsx';
 import { dataBlogv1 } from '../../data/dataBlogv1';
 
 const OnixBlogv1 = () => {

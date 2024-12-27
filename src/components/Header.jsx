@@ -1,9 +1,9 @@
 import NavLink from './utils/NavLink.jsx';
-import MenuOverlay from './utils/MenuOverlay';
+import MenuOverlay from './utils/MenuOverlay.jsx';
 import { EllipsisVerticalIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react';
-import LanguajeMenu from './utils/LanguajeMenu';
+import LanguajeMenu from './utils/LanguajeMenu.jsx';
 
 const NavLinks = [ //matriz de enlaces para el componente NavLink
     {
