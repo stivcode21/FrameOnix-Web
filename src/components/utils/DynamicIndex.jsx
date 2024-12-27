@@ -35,7 +35,7 @@ const DynamicIndex = ({ sections }) => {
             <h2 className="mb-8 px-2 text-sm text-[#2fd484]">
                 EN ESTA PAGINA
             </h2>
-            <ul className="flex flex-col gap-y-4 text-sm">
+            <ul className="flex flex-col gap-y-4 text-xs">
                 {sections.map(({ id, title }) => (
                     <li key={id} className={activeSection === id ? "bg-[#2fd48411] px-2 py-1 rounded-l-xl" : "bg-transparent px-2 py-1"}>
                         {/* Resalta sección activa */}

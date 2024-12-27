@@ -2,8 +2,7 @@ const HeaderChildren = [
   {
     key: "children",
     type: "JSX",
-    description:
-      "Utiliza la propiedad 'children' si necesitas personalizar completamente el contenido del encabezado (header). Esto reiniciará el contenido, pero mantendrá estilos base para conservar la estructura general.",
+    description: "onixBlogv1.header-children",
   },
 ];
 
@@ -11,8 +10,7 @@ const HeaderId = [
   {
     key: "id",
     type: "string",
-    description:
-      "Este 'id' se utiliza para construir el path al que se redirige al hacer clic en el logo del header.",
+    description: "onixBlogv1.header-id",
   },
 ];
 
@@ -20,18 +18,17 @@ const HeaderContent = [
   {
     key: "content.img",
     type: "string",
-    description: "Ruta del logo mostrado en el header.",
+    description: "onixBlogv1.header-content_img",
   },
   {
     key: "content.nav",
     type: "array",
-    description:
-      "Array con los nombres de las secciones de la navbar. Asegúrate de asignar los mismos IDs a las secciones correspondientes.",
+    description: "onixBlogv1.header-content_nav",
   },
   {
     key: "content.icon",
     type: "JSX",
-    description: "Componente o SVG para mostrar el icono en el header.",
+    description: "onixBlogv1.header-content_icon",
   },
 ];
 
@@ -39,65 +36,60 @@ const HeaderStyles = [
   {
     key: "styles.header",
     type: "string",
-    description:
-      "Estilos para personalizar el contenedor principal del encabezado (header).",
+    description: "onixBlogv1.header-styles_header",
   },
   {
     key: "styles.containerImg",
     type: "string",
-    description:
-      "Estilos para el contenedor que agrupa el logo, optimizando su diseño visual.",
+    description: "onixBlogv1.header-styles_containerImg",
   },
   {
     key: "styles.img",
     type: "string",
-    description: "Estilos para modificar la apariencia de la imagen del logo.",
+    description: "onixBlogv1.header-styles_img",
   },
   {
     key: "styles.nav",
     type: "string",
-    description:
-      "Estilos personalizados para los enlaces en la barra de navegación (navbar).",
+    description: "onixBlogv1.header-styles_nav",
   },
   {
     key: "styles.icon",
     type: "string",
-    description:
-      "Estilos para personalizar el contenedor de los iconos de la interfaz.",
+    description: "onixBlogv1.header-styles_icon",
   },
 ];
 
 const MainContent = [
   {
-    key: "content.h2",
+    key: "content.h1",
     type: "string",
-    description: "Texto del título principal de la sección (main).",
+    description: "onixBlogv1.main-content_h1",
   },
   {
     key: "content.p",
     type: "string",
-    description: "Texto principal que se mostrará en la sección (main).",
+    description: "onixBlogv1.main-content_p",
   },
   {
     key: "content.path",
     type: "string",
-    description: "Enlace al que redirigirá el botón al hacer clic.",
+    description: "onixBlogv1.main-content_path",
   },
   {
     key: "content.button",
     type: "string",
-    description: "Texto que se mostrará dentro del botón.",
+    description: "onixBlogv1.main-content_button",
   },
   {
     key: "content.video",
     type: "string",
-    description: "URL de tipo 'embed' para mostrar un video en la sección.",
+    description: "onixBlogv1.main-content_video",
   },
   {
     key: "content.img",
     type: "string",
-    description:
-      "Enlace a la imagen a mostrar, si decides no incluir un video.",
+    description: "onixBlogv1.main-content_img",
   },
 ];
 
@@ -105,37 +97,42 @@ const MainStyles = [
   {
     key: "styles.main",
     type: "string",
-    description: "Estilos para personalizar el contenedor principal.",
+    description: "onixBlogv1.main-styles_main",
   },
   {
     key: "styles.containerDescription",
     type: "string",
-    description: "Estilos para el contenedor que agrupa el h2, p y button.",
+    description: "onixBlogv1.main-styles_containerDescription",
   },
   {
-    key: "styles.h2",
+    key: "styles.h1",
     type: "string",
-    description: "Estilos específicos para el elemento h2.",
+    description: "onixBlogv1.main-styles_h1",
   },
   {
     key: "styles.p",
     type: "string",
-    description: "Estilos específicos para el elemento p.",
+    description: "onixBlogv1.main-styles_p",
   },
   {
     key: "styles.button",
     type: "string",
-    description: "Estilos específicos para el button.",
+    description: "onixBlogv1.main-styles_button",
   },
   {
     key: "styles.containerMedia",
     type: "string",
-    description: "Estilos para el contenedor de elementos multimedia.",
+    description: "onixBlogv1.main-styles_containerMedia",
+  },
+  {
+    key: "styles.video",
+    type: "string",
+    description: "onixBlogv1.main-styles_video",
   },
   {
     key: "styles.img",
     type: "string",
-    description: "Estilos específicos para la imagen.",
+    description: "onixBlogv1.main-styles_img",
   },
 ];
 
@@ -143,41 +140,37 @@ const PostsContent = [
   {
     key: "content.h2",
     type: "string",
-    description:
-      "Texto que se usará como título de la sección de publicaciones (posts).",
+    description: "onixBlogv1.posts-content_h2",
   },
   {
     key: "content.posts",
     type: "array",
-    description:
-      "Array que contiene objetos con la información para crear cada publicación. Debe contener más de 1 elemento para renderizarse.",
+    description: "onixBlogv1.posts-content_posts",
   },
   {
     key: "posts._img",
     type: "string",
-    description: "URL o ruta de la imagen que se mostrará en la publicación.",
+    description: "onixBlogv1.posts-_img",
   },
   {
     key: "posts._h3",
     type: "string",
-    description: "Título de la publicación dentro del objeto.",
+    description: "onixBlogv1.posts-_h3",
   },
   {
     key: "posts._p",
     type: "string",
-    description: "Texto o descripción de la publicación.",
+    description: "onixBlogv1.posts-_p",
   },
   {
     key: "posts._path",
     type: "string",
-    description:
-      "Enlace al que redireccionará la publicación cuando se haga clic.",
+    description: "onixBlogv1.posts-_path",
   },
   {
     key: "posts._namePath",
     type: "string",
-    description:
-      "Texto que se mostrará como el nombre del enlace en la publicación.",
+    description: "onixBlogv1.posts-_namePath",
   },
 ];
 
@@ -185,47 +178,42 @@ const PostsStyles = [
   {
     key: "styles.posts",
     type: "string",
-    description:
-      "Estilos para personalizar el contenedor principal de las publicaciones (posts).",
+    description: "onixBlogv1.posts-styles_posts",
   },
   {
     key: "styles.h2",
     type: "string",
-    description:
-      "Estilos para el texto del título principal de la sección de publicaciones.",
+    description: "onixBlogv1.posts-styles_h2",
   },
   {
     key: "styles.grid",
     type: "string",
-    description:
-      "Estilos para la cuadrícula (grid) que organiza las publicaciones.",
+    description: "onixBlogv1.posts-styles_grid",
   },
   {
     key: "styles.containerDescription",
     type: "string",
-    description:
-      "Estilos para el contenedor que agrupa el contenido de cada publicación.",
+    description: "onixBlogv1.posts-styles_containerDescription",
   },
   {
     key: "styles._img",
     type: "string",
-    description:
-      "Estilos para personalizar la apariencia de las imágenes de las publicaciones.",
+    description: "onixBlogv1.posts-styles-_img",
   },
   {
     key: "styles._h3",
     type: "string",
-    description: "Estilos para el título individual de cada publicación.",
+    description: "onixBlogv1.posts-styles-_h3",
   },
   {
     key: "styles._p",
     type: "string",
-    description: "Estilos para el texto descriptivo de las publicaciones.",
+    description: "onixBlogv1.posts-styles-_p",
   },
   {
     key: "styles._path",
     type: "string",
-    description: "Estilos para los enlaces dentro de las publicaciones.",
+    description: "onixBlogv1.posts-styles-_path",
   },
 ];
 
@@ -233,18 +221,17 @@ const AboutContent = [
   {
     key: "content.h2",
     type: "string",
-    description: "Texto que se usará como título de la sección About",
+    description: "onixBlogv1.about-content_h2",
   },
   {
     key: "content.paragraphs",
     type: "array",
-    description:
-      "Array de strings que conformarán los parrafos de la sección About.",
+    description: "onixBlogv1.about-content_paragraphs",
   },
   {
     key: "content.img",
     type: "string",
-    description: "URL o ruta de la imagen que se mostrará en la seccion About",
+    description: "onixBlogv1.about-content_img",
   },
 ];
 
@@ -252,22 +239,22 @@ const AboutStyles = [
   {
     key: "styles.containerDescription",
     type: "string",
-    description: "Estilos para personalizar el contenedor principal.",
+    description: "onixBlogv1.about-styles_containerDescription",
   },
   {
     key: "styles.h2",
     type: "string",
-    description: "Estilos para personalizar el título de esta sección.",
+    description: "onixBlogv1.about-styles_h2",
   },
   {
     key: "styles.p",
     type: "string",
-    description: "Estilos específicos para los párrafos de esta sección.",
+    description: "onixBlogv1.about-styles_p",
   },
   {
     key: "styles.img",
     type: "string",
-    description: "Estilos específicos para la imagen de esta sección.",
+    description: "onixBlogv1.about-styles_img",
   },
 ];
 
@@ -275,38 +262,27 @@ const ArticleContent = [
   {
     key: "content.h2",
     type: "string",
-    description:
-      "Texto que se usará como título principal de la sección Article.",
+    description: "onixBlogv1.article-content_h2",
   },
   {
     key: "content.p",
     type: "string",
-    description:
-      "Texto que servirá como descripción principal de la sección Article.",
+    description: "onixBlogv1.article-content_p",
   },
   {
     key: "content.img",
     type: "string",
-    description:
-      "URL o ruta de la imagen que se mostrará en la sección Article.",
+    description: "onixBlogv1.article-content_img",
   },
   {
-    key: "content.articles",
-    type: "array",
-    description:
-      "Array que contiene objetos con 'h3' y 'p' para definir subtítulos y descripciones relacionadas con la imagen.",
-  },
-  {
-    key: "articles._h3",
+    key: "content.h3",
     type: "string",
-    description:
-      "Texto que se usará como subtítulo dentro del contenido de artículos.",
+    description: "onixBlogv1.article-content_h3",
   },
   {
-    key: "articles._p",
+    key: "content.text",
     type: "string",
-    description:
-      "Texto que servirá como descripción dentro del contenido de artículos.",
+    description: "onixBlogv1.aticle-content_text",
   },
 ];
 
@@ -314,45 +290,42 @@ const ArticleStyles = [
   {
     key: "styles.article",
     type: "string",
-    description: "Estilos para el contenedor principal de la sección Article.",
+    description: "onixBlogv1.article-styles_article",
   },
   {
     key: "styles.containerDescription",
     type: "string",
-    description:
-      "Estilos para el contenedor del título y la descripción principal.",
+    description: "onixBlogv1.article-styles_containerDescription",
   },
   {
     key: "styles.h2",
     type: "string",
-    description: "Estilos específicos para el título principal (h2).",
+    description: "onixBlogv1.article-styles_h2",
   },
   {
     key: "styles.p",
     type: "string",
-    description: "Estilos específicos para los párrafos principales.",
+    description: "onixBlogv1.article-styles_p",
   },
   {
     key: "styles.img",
     type: "string",
-    description: "Estilos para personalizar la imagen de la sección Article.",
+    description: "onixBlogv1.article-styles_img",
   },
   {
-    key: "styles.containerArticles",
+    key: "styles.containerArticle",
     type: "string",
-    description: "Estilos para el contenedor de los artículos secundarios.",
+    description: "onixBlogv1.article-styles_containerArticle",
   },
   {
-    key: "styles._h3",
+    key: "styles.h3",
     type: "string",
-    description:
-      "Estilos específicos para los subtítulos de los artículos (h3).",
+    description: "onixBlogv1.article-styles_h3",
   },
   {
-    key: "styles._p",
+    key: "styles.text",
     type: "string",
-    description:
-      "Estilos específicos para los párrafos de los artículos secundarios.",
+    description: "onixBlogv1.article-styles_text",
   },
 ];
 
@@ -360,39 +333,42 @@ const ContactContent = [
   {
     key: "content.h2",
     type: "string",
-    description: "Título de la sección de redes sociales.",
+    description: "onixBlogv1.contact-content_h2",
   },
   {
     key: "content.icons",
     type: "array",
-    description:
-      "Array con objetos que incluyen iconos (JSX) y enlaces (path).",
+    description: "onixBlogv1.contact-content_icons",
   },
   {
     key: "icons.path",
     type: "string",
-    description: "URL de redirección asociada a cada icono.",
+    description: "onixBlogv1.contact-icons_path",
   },
-  { key: "icons.icon", type: "JSX", description: "Icono o SVG a mostrar." },
+  {
+    key: "icons.icon",
+    type: "JSX",
+    description: "onixBlogv1.contact-icons_icon",
+  },
   {
     key: "content.h3",
     type: "string",
-    description: "Título para los campos de contacto.",
+    description: "onixBlogv1.contact-content_h3",
   },
   {
     key: "content.placeholderA",
     type: "string",
-    description: "Placeholder para el primer input.",
+    description: "onixBlogv1.contact-content_placeholderA",
   },
   {
     key: "content.placeholderB",
     type: "string",
-    description: "Placeholder para el área de texto.",
+    description: "onixBlogv1.contact-content_placeholderB",
   },
   {
     key: "content.button",
     type: "string",
-    description: "Texto del botón de envío.",
+    description: "onixBlogv1.contact-content_button",
   },
 ];
 
@@ -400,47 +376,47 @@ const ContactStyles = [
   {
     key: "styles.contact",
     type: "string",
-    description: "Estilos del contenedor principal de la sección.",
+    description: "onixBlogv1.contact-styles_contact",
   },
   {
     key: "styles.h2",
     type: "string",
-    description: "Estilos para el título de redes sociales.",
+    description: "onixBlogv1.contact-styles_h2",
   },
   {
     key: "styles.containerIcons",
     type: "string",
-    description: "Estilos para el contenedor de los iconos.",
+    description: "onixBlogv1.contact-styles_containerIcons",
   },
   {
     key: "styles.icon",
     type: "string",
-    description: "Estilos específicos para cada icono.",
+    description: "onixBlogv1.contact-styles_icon",
   },
   {
     key: "styles.containerInputs",
     type: "string",
-    description: "Estilos para el contenedor de los campos de contacto.",
+    description: "onixBlogv1.contact-styles_containerInputs",
   },
   {
     key: "styles.h3",
     type: "string",
-    description: "Estilos para el título de los campos de contacto.",
+    description: "onixBlogv1.contact-styles_h3",
   },
   {
     key: "styles.input",
     type: "string",
-    description: "Estilos para el campo de input principal.",
+    description: "onixBlogv1.contact-styles_input",
   },
   {
     key: "styles.textArea",
     type: "string",
-    description: "Estilos para el campo de área de texto.",
+    description: "onixBlogv1.contact-styles_textArea",
   },
   {
     key: "styles.button",
     type: "string",
-    description: "Estilos para el botón de envío.",
+    description: "onixBlogv1.contact-styles_button",
   },
 ];
 
@@ -448,12 +424,12 @@ const FooterContent = [
   {
     key: "content.p",
     type: "string",
-    description: "Texto mostrado como contenido principal en el footer.",
+    description: "onixBlogv1.footer-content_p",
   },
   {
     key: "content.img",
     type: "string",
-    description: "URL o ruta de la imagen del logo en el footer.",
+    description: "onixBlogv1.footer-content_img",
   },
 ];
 
@@ -461,22 +437,22 @@ const FooterStyles = [
   {
     key: "styles.footer",
     type: "string",
-    description: "Estilos del contenedor principal del footer.",
+    description: "onixBlogv1.footer-styles_footer",
   },
   {
     key: "styles.containerDescription",
     type: "string",
-    description: "Estilos para el contenedor de la descripción completa.",
+    description: "onixBlogv1.footer-styles_containerDescription",
   },
   {
     key: "styles.p",
     type: "string",
-    description: "Estilos para el texto dentro del footer.",
+    description: "onixBlogv1.footer-styles_p",
   },
   {
     key: "styles.img",
     type: "string",
-    description: "Estilos para la imagen del logo en el footer.",
+    description: "onixBlogv1.footer-styles_img",
   },
 ];
 

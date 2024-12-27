@@ -10,8 +10,6 @@ const OnixBlogv1 = () => {
 
   const { t } = useTranslation();
 
-
-
   return (
     <>
       {/* Encabezado principal */}
@@ -21,10 +19,11 @@ const OnixBlogv1 = () => {
 
       {/* Sección principal del encabezado */}
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-white">OnixBlogv1 Documentation</h1>
+        <h1 className="text-3xl font-bold text-white">
+          {t('onixBlogv1.title')}
+        </h1>
         <p className="text-gray-300">
-          A detailed guide to using the <span className="font-semibold">OnixBlogv1</span> component.
-          Explore its props, structure, and examples.
+          {t('onixBlogv1.T-description')}
         </p>
       </header>
 
@@ -107,11 +106,9 @@ const OnixBlogv1 = () => {
         </>
         <div className='lg:w-1/2 mx-auto mb-20'>
           <Note
-            Ntext1={'A partir de esta sección, no se mencionarán las props '}
-            Nspan1={` Children `}
-            Ntext2={` ni `}
-            Nspan2={` id `}
-            Ntext3={'El prop (id) solo es necesario si cambias el contenido del header, y (children) sirve únicamente para reemplazar el contenido manteniendo la estructura base. Para evitar redundancias, no las incluiremos en las siguientes explicaciones.'}
+            Ntext1={t('onixBlogv1.info1')}
+            Nspan1={` Children, Id `}
+            Ntext3={t('onixBlogv1.info2')}
           />
         </div>
         {/* mainProps - content */}
@@ -168,8 +165,8 @@ const OnixBlogv1 = () => {
         content: {
           h3: "Section Posts", 
           posts: [
-           {img: "/frameonix.png", h2: "frameonix", p: "hello world..."},
-           {img: "/frameonix.png", h2: "stivcode", p: "example..."}
+           {_img: "/frameonix.png", _h3: "frameonix", _p: "hello world..."},
+           {_img: "/frameonix.png", _h3: "stivcode", _p: "example..."}
           ]
         },
       }}
@@ -210,8 +207,8 @@ const OnixBlogv1 = () => {
         content: {
           h2: "About Me", 
           paragraphs: [
-          "Passionate about building solutions with code."
-          "Always learning and tackling new challenges."
+          { p: "Passionate about building solutions with code."},
+          { p: "Always learning and tackling new challenges."}
           ]
         },
       }}
@@ -250,10 +247,8 @@ const OnixBlogv1 = () => {
       articleProps={{
         content: {
           h2: "section articles"
-          articles: [
-          { _h3: "description img"
-            _p: "Exploring trends and sharing insightful perspectives." }
-          ]
+          h3: "description img"
+          text: "Exploring trends and sharing insightful perspectives."
         },
       }}
     />);`} />} />
