@@ -29,7 +29,7 @@ const Examples = () => {
                             v2={true}
                         />
                         <TerminalBlock
-                            command={`import { OnixBlogv1 } from "@stivcode/frameonix";
+                            command={`import { OnixBlogv1 } from "frameonix";
 
 function App() {
   return (
@@ -72,7 +72,7 @@ function App() {
                             )}
                         />
                         <TerminalBlock
-                            command={`import { OnixBlogv1 } from "@stivcode/frameonix";
+                            command={`import { OnixBlogv1 } from "frameonix";
 
 function App() {
     return (
@@ -108,9 +108,9 @@ function App() {
       mainProps={{
         id: "main",
         styles: {
-          main: "bg-gray-300",
-          h2: "text-xl bold",
-          button: "rounded-md",
+          containerImg: { display: 'flex'},
+          img: { borderRadius: '50%'' },
+          nav: { gap: '20px', padding: '10px' },
         }
       }} />
   )

@@ -37,6 +37,7 @@ const Install = () => {
                 </div>
 
                 <div className='flex flex-col gap-y-20 mt-8'>
+                    {/* paso 1 */}
                     <div className='flex w-full flex-col lg:flex-row lg:gap-x-2'>
                         <StepbyStep
                             number={1}
@@ -45,9 +46,10 @@ const Install = () => {
                             span1={' ` FrameOnix` '}
                             text2={t('install.Step-1_p2')} />
                         <TerminalBlock title={"Terminal"}
-                            command={`npm install @stivcode/frameonix`} />
+                            command={`npm install frameonix`} />
                     </div>
-                    <div className='flex w-full flex-col lg:flex-row lg:gap-x-2'>
+                    {/* paso 2 */}
+                    {/* <div className='flex w-full flex-col lg:flex-row lg:gap-x-2'>
                         <StepbyStep
                             number={2}
                             title={t('install.Step-2_title')}
@@ -58,8 +60,9 @@ const Install = () => {
                         <TerminalBlock title={"Terminal"}
                             command={`npm install -D tailwindcss
 npx tailwindcss init`} />
-                    </div>
-                    <div className='flex w-full flex-col lg:flex-row lg:gap-x-2'>
+                    </div> */}
+                    {/* paso 3 */}
+                    {/* <div className='flex w-full flex-col lg:flex-row lg:gap-x-2'>
                         <StepbyStep
                             number={3}
                             title={t('install.Step-3_title')}
@@ -67,19 +70,20 @@ npx tailwindcss init`} />
                             span1={' `tailwind.config.js` '}
                             text2={t('install.Step-3_p2')} />
                         <TerminalBlock title={"tailwind.config.js"}
-                            command={`/** @type {import('tailwindcss').Config} */
+                            command={`
 
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    
   ],
   theme: {
     extend: {},
   },
   plugins: [],
 }`} />
-                    </div>
-                    <div className='flex w-full flex-col lg:flex-row lg:gap-x-3'>
+                    </div> */}
+                    {/* paso 4 */}
+                    {/* <div className='flex w-full flex-col lg:flex-row lg:gap-x-3'>
                         <StepbyStep
                             number={4}
                             title={t('install.Step-4_title')}
@@ -91,10 +95,11 @@ module.exports = {
                             command={`@tailwind base;
 @tailwind components;
 @tailwind utilities;`} />
-                    </div>
+                    </div> */}
+                    {/* paso 5 */}
                     <div className='flex w-full flex-col lg:flex-row lg:gap-x-4'>
                         <StepbyStep
-                            number={5}
+                            number={2}
                             title={t('install.Step-5_title')}
                             text1={t('install.Step-5_p1')} />
                         <TerminalBlock title={"Terminal"}
@@ -105,7 +110,9 @@ export default function App() {
         <OnixBlog
             headerProps={{
                 styles: {
-                    header: "bg-blue-500 text-white p-4",
+                    header: { padding: '20px' },
+                    containerImg: { border: '1px solid #ddd' },
+                    li:  { fontSize: '3rem' },
                 },
                 content: {
                     title: "My Custom Blog",
@@ -116,9 +123,10 @@ export default function App() {
     );
 }`} />
                     </div>
+                    {/* paso 6 */}
                     <div className='flex w-full flex-col lg:flex-row lg:gap-x-2'>
                         <StepbyStep
-                            number={6}
+                            number={3}
                             title={t('install.Step-6_title')}
                             text1={t('install.Step-6_p1')}
                             span1={' ` npm run dev` '}

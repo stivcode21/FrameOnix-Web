@@ -37,11 +37,10 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.HeaderId}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       headerProps={{
-       id: "#main"
+       id: "#Main"
       }}
     />);`} />} />
         </>
@@ -52,14 +51,20 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.HeaderContent}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       headerProps={{
         content: {
           img: "/frameonix.png", 
-          nav: ["Main", "About", "Contact"],
-          icon: (<Bars2Icon />),
+          navLiks: [
+          {
+            title: "About",
+            path: "#About"
+          },
+          {
+            title: "Blog",
+            path: "#Blog"
+          },],
         },
       }}
     />);`} />} />
@@ -71,16 +76,14 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.HeaderStyles}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       headerProps={{
         styles: {
-          containerImg: "rounded-lg",
-          img: "w-62 h-52",
-          nav: "text-lg text-white hover:text-black",
-          icon: "w-fit"
-        },
+          containerImg: { display: 'flex', justifyContent: 'center' },
+          img: { borderRadius: '50%'' },
+          nav: { gap: '20px', padding: '10px' },
+          menuMobile: { backgroundColor: 'white', padding: '20px' }
       }}
     />);`} />} />
         </>
@@ -92,7 +95,6 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.HeaderChildren}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       children=(
@@ -119,33 +121,31 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.MainContent}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       mainProps={{
         content: {
-          h2: "Section Main", 
+          title: "Section Main", 
           path: "https://www.stivcode.com/",
           video: "https://www.youtube.com/embed/video_id",
         },
       }}
     />);`} />} />
         </>
-        {/* headerProps - styles */}
+        {/* mainProps - styles */}
         <>
           <TableDoc
             subtitle="mainProps -> styles"
             Props={dataBlogv1.MainStyles}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       mainProps={{
         styles: {
-          main: "bg-gray-300 px-8 rounded-lg",
-          h2: "font-bold text-3xl",
-          containerMedia: "rounded-lg ml-4",
+          main: "{ flexDirection: 'row', justifyContent: 'space-around' }",
+          title: "{ fontSize: '1rem', lineHeight: '1.5', color: '#666' }",
+          containerMedia: { height: '500px', alignItems: 'flex-start' },
         },
       }}
     />);`} />} />
@@ -158,15 +158,19 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.PostsContent}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       postsProps={{
         content: {
-          h3: "Section Posts", 
-          posts: [
-           {_img: "/frameonix.png", _h3: "frameonix", _p: "hello world..."},
-           {_img: "/frameonix.png", _h3: "stivcode", _p: "example..."}
+          title: "Section Posts", 
+          cards: [
+           {
+             img: "/frameonix.png", 
+             _title: "frameonix",
+             description: "hello world..."
+             path: "description default"
+             namePath: "Learn More"
+            },
           ]
         },
       }}
@@ -179,15 +183,16 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.PostsStyles}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       postsProps={{
         styles: {
-          h2: "text-3xl font-bold",
-          containerDescription: "text-center text-lg",
-          p: "text default...",
-          path: "text-gray-500 hover:text-blue-500",
+          title: { fontSize: '3rem', color: '#333' },
+          grid: { gridTemplateColumns: 'repeat(2, 1fr)' },
+          img: { borderRadius: '8px', objectFit: 'contain' },
+          _title: { fontSize: '1.5rem'},
+          description: { fontSize: '1rem'},
+          path: { color: '#007BFF'},
         },
       }}
     />);`} />} />
@@ -200,15 +205,14 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.AboutContent}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       aboutProps={{
         content: {
-          h2: "About Me", 
+          title: "About Me", 
           paragraphs: [
-          { p: "Passionate about building solutions with code."},
-          { p: "Always learning and tackling new challenges."}
+            { p: "Passionate about building solutions with code."},
+            { p: "Always learning and tackling new challenges."}
           ]
         },
       }}
@@ -221,14 +225,14 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.AboutStyles}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       aboutProps={{
         styles: {
-          containerDescription: "text-center text-lg",
-          h2: "text-3xl font-bold",
-          p: "font-medium text-lg",
+          section: { backgroundColor: 'lightblue', padding: '20px' },
+          containerDescription: { border: '1px solid #ddd' },
+          title:  { fontSize: '3rem', color: '#333' },
+          p: { lineHeight: '1.6' },
         },
       }}
     />);`} />} />
@@ -241,14 +245,14 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.ArticleContent}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       articleProps={{
         content: {
-          h2: "section articles"
-          h3: "description img"
-          text: "Exploring trends and sharing insightful perspectives."
+          title: "section articles",
+          img: "/frameonix.png",
+          _title: "default subtitle...",
+          description: "Exploring trends and sharing insightful perspectives."
         },
       }}
     />);`} />} />
@@ -260,14 +264,14 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.ArticleStyles}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       articleProps={{
         styles: {
-          article: "bg-gray-500 mx-auto"
-          containerDescription: "text-center text-lg",
-          h2: "text-3xl font-bold",
+          article: { backgroundColor: 'white', padding: '20px' },
+          containerDescription: { margin: '0 auto', maxWidth: '1200px' },
+          title: { color: 'red', fontSize: '30px' },
+          _title: { fontWeight: 'bold', textAlign: 'center' }
         },
       }}
     />);`} />} />
@@ -280,16 +284,22 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.ContactContent}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       contactProps={{
         content: {
-          h2: "section contact"
+          title: "section contact",
           icons: [
-          { path: "/stivcode.com" 
-            icon: (<webIcon/>) }
-          ]
+            { 
+              icon: <webIcon/>,
+              path: "/stivcode.com" 
+            },
+             { 
+              icon: <Instagram/>,
+              path: "/instagram.com/yourprofile" 
+            }
+          ],
+          button: "Send Message"
         },
       }}
     />);`} />} />
@@ -301,14 +311,14 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.ContactStyles}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       contactProps={{
         styles: {
-          contact: "bg-gray-500 mx-auto"
-          containerIcons: "flex flex-col",
-          h2: "text-xl font-semibold",
+          contact: { backgroundColor: '#f5f5f5', padding: '20px' },
+          containerIcons: { justifyContent: 'center', gap: '20px' },
+          title: { fontSize: '3rem', color: '#000' },
+          form: { padding: '10px', borderRadius: '10px' }
         },
       }}
     />);`} />} />
@@ -321,13 +331,12 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.FooterContent}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       footerProps={{
         content: {
-          p: "© text default..."
-          img: "/logoFrameOnix"
+          description: "© text default...",
+          img: "./logoFrameOnix"
         },
       }}
     />);`} />} />
@@ -339,13 +348,12 @@ const OnixBlogv1 = () => {
             Props={dataBlogv1.FooterStyles}
             children={
               <TerminalBlock
-                title="Ejemplo"
                 command={`return (
     <OnixBlogv1
       footerProps={{
         styles: {
-          footer: "w-full h-34"
-          p: "text-xs text-gray-500"
+          footer: { backgroundColor: 'blue', padding: '1rem' },
+          description: { fontSize: '1rem', color: 'black' }
         },
       }}
     />);`} />} />
