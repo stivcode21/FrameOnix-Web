@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.postimg.cc/C5N6M5Rb/FRAMEONIX-1.webp" alt="Frameonix Preview" width="700" height="500" />
+  <img src="https://i.postimg.cc/fTcmy44f/FRAMEONIX-1.webp" alt="Frameonix Preview" width="700" height="500" />
 </p>
 
 <div align="center">
