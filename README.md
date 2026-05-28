@@ -63,7 +63,7 @@ Este proyecto no solo mejora la experiencia de quienes usan Frameonix, sino que 
 
 ## ▫️Tools
 
-<img src="https://skillicons.dev/icons?i=react,vite,tailwind,vercel" />
+ <img src="https://skillicons.dev/icons?i=react,vite,tailwind,vercel" />
 
 ---
 
